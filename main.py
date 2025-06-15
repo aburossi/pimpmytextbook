@@ -2,7 +2,6 @@ from utils.file_loader import load_textbook, load_user_content
 from chains.orchestrator_chain import generate_guidelines
 from chains.output_chain import generate_output
 from utils.converter import convert_markdown
-import json
 import os
 from dotenv import load_dotenv
 
@@ -19,23 +18,20 @@ if __name__ == "__main__":
         "user_input": user_input
     }
 
+    # Generate didactic guidelines (returns JSON string + parsed object)
+    json_string, parsed_object = generate_guidelines(combined_inputs)
 
+    # Save raw JSON and markdown version
+    with open("outputs/guidelines_output.json", "w", encoding="utf-8") as f:
+        f.write(json_string)
 
-
-    # Generate didactic guidelines
-    didactic_guidelines = generate_guidelines(combined_inputs)
-
-    # Save as markdown
     with open("inputs/didactic_guidelines.md", "w", encoding="utf-8") as f:
-        f.write(didactic_guidelines)
+        f.write(json_string)
 
-    # (Optional) Parse to structured dict if JSON-like
-    # For now we use the markdown text directly
-
-    # Proceed to second step
+    # Generate lesson unit markdown from the JSON string
     final_md = generate_output(
         prompt_type="lesson_unit",
-        didactic_guidelines=didactic_guidelines,
+        didactic_guidelines=json_string,
         user_content=user_input
     )
 
