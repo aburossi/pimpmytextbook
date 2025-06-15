@@ -42,7 +42,7 @@
 **2. Bloom Level: "Verstehen"**
    - Question Type: Comprehension-based.
    - Focus: Explanation of ideas or concepts.
-   - Design: Questions prompting learners to interpret or summarize {content} to demonstrate understanding.
+   - Design: Questions prompting learners to interpret or summarize {{content}} to demonstrate understanding.
 
 ---
 
@@ -76,78 +76,78 @@
 - if no youtube or mp3 or source link is provided leave blank
 // Example Output
 
-{
+{{
   "title": "Verständnisfragen "lesson_unit"",
-  "media": {
+  "media": {{
       "type": "textbook",
       "url": "",
       "source": ""
-  },
+  }},
   "questions": [
-    {
+    {{
       "type": "MultipleChoice",
       "bloom_level": "Erinnern",
       "question": "<p>Was fordert die Umweltverantwortungsinitiative in der Schweiz?</p>",
       "options": [
-        {
+        {{
           "text": "Die Schweiz soll die Umwelt nur so weit belasten, wie sich die Natur erholen kann.",
           "is_correct": true,
           "feedback": "✅ Richtig! Die Initiative fordert, dass die Schweiz die Umwelt nur soweit belastet, wie sich die Natur erholen kann."
-        },
-        {
+        }},
+        {{
           "text": "Die Schweiz soll ihre Umweltbelastung auf das Doppelte erhöhen.",
           "is_correct": false,
           "feedback": "❌ Falsch. Die Initiative fordert eine Reduzierung der Umweltbelastung, nicht eine Erhöhung."
-        },
-        {
+        }},
+        {{
           "text": "Die Schweiz soll keine Maßnahmen zum Umweltschutz ergreifen.",
           "is_correct": false,
           "feedback": "❌ Falsch. Die Initiative zielt darauf ab, Maßnahmen zum Schutz der Umwelt zu ergreifen."
-        }
+        }}
       ]
-    },
+    }},
 ... // weitere multiple choices
-    {
+    {{
       "type": "MultipleChoice",
       "bloom_level": "Verstehen",
       "question": "<p>Welche Risiken sehen Bundesrat und Parlament bei der Annahme der Initiative?</p>",
       "options": [
-        {
+        {{
           "text": "Abwanderung von Schweizer Firmen ins Ausland",
           "is_correct": true,
           "feedback": "✅ Richtig! Bundesrat und Parlament befürchten, dass Schweizer Firmen ins Ausland abwandern könnten."
-        },
-        {
+        }},
+        {{
           "text": "Steigerung der Attraktivität des Schweizer Absatzmarktes",
           "is_correct": false,
           "feedback": "❌ Falsch. Bundesrat und Parlament befürchten das Gegenteil, nämlich eine Schwächung des Absatzmarktes."
-        },
-        {
+        }},
+        {{
           "text": "Erhöhung des Konsums von fossilen Brennstoffen",
           "is_correct": false,
           "feedback": "❌ Falsch. Die Initiative zielt auf eine Reduzierung der Umweltbelastung ab, nicht auf eine Erhöhung des Konsums von fossilen Brennstoffen."
-        }
+        }}
       ]
-    },
-    {
+    }},
+    {{
       "type": "TrueFalse",
       "bloom_level": "Erinnern",
       "question": "<p>Die Umweltverantwortungsinitiative fordert, dass die Schweiz mehr Ressourcen verbraucht als die Natur erholen kann.</p>",
       "correct_answer": false,
       "feedback_correct": "Richtig! Die Initiative fordert das Gegenteil, nämlich eine Begrenzung der Ressourcennutzung auf das, was die Natur erholen kann.",
       "feedback_incorrect": "Falsch. Die Initiative fordert eine Reduzierung der Ressourcennutzung auf ein nachhaltiges Niveau."
-    },
+    }},
 ... // weitere Truefalse
-    {
+    {{
       "type": "TrueFalse",
       "bloom_level": "Verstehen",
       "question": "<p>Bundesrat und Parlament befürchten, dass die Initiative den Wirtschaftsstandort Schweiz schwächen könnte.</p>",
       "correct_answer": true,
       "feedback_correct": "Richtig! Sie befürchten eine Schwächung des Wirtschaftsstandorts.",
       "feedback_incorrect": "Falsch. Bundesrat und Parlament befürchten tatsächlich eine Schwächung des Wirtschaftsstandorts."
-    }
+    }}
   ]
-}
+}}
 
 
 

@@ -15,8 +15,10 @@ if __name__ == "__main__":
     user_input = load_user_content()
 
     combined_inputs = {
-        "content": chapter + "\n\n" + user_input
+        "chapter": chapter,
+        "user_input": user_input
     }
+
 
 
 

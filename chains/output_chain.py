@@ -1,5 +1,5 @@
 from langchain.prompts import PromptTemplate
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 
 def generate_output(prompt_type, didactic_guidelines, user_content):
     with open(f"prompts/{prompt_type}.txt") as f:

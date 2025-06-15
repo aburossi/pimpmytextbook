@@ -1,0 +1,1 @@
+Bitte laden Sie den {user_input} in Form eines Kapitels des Lehrbuchs hoch, damit ich die Lektionseinheit für Sie gestalten kann.

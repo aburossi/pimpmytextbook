@@ -1,5 +1,5 @@
 from langchain.prompts import PromptTemplate
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 
 def generate_guidelines(inputs):
     with open("prompts/didactic_guidelines.txt") as f:

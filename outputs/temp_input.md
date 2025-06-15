@@ -1,0 +1,1 @@
+Bitte laden Sie die relevanten Inhalte oder das Kapitel des Lehrbuchs sowie die JSON-Übersicht der Lektion hoch, um mit der Erstellung des Lehrmaterials beginnen zu können.
