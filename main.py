@@ -19,6 +19,7 @@ if __name__ == "__main__":
         "user_input": user_input
     }
 
+
     # Generate didactic guidelines
     didactic_guidelines = generate_guidelines(combined_inputs)
 
