@@ -1,9 +1,12 @@
-```markdown
-# Unterrichtseinheit: Kreatives Schreiben
+# Unterrichtseinheit: Kreatives Schreiben im Deutschunterricht
 
 ## Worum es geht
-In dieser Unterrichtseinheit wird das kreative Schreiben gefördert. Die Schüler lernen, ihre Fantasie auszudrücken und ihre schriftlichen Fähigkeiten zu verbessern. Durch verschiedene Schreibübungen und Kreativtechniken werden sie angeregt, eigene Geschichten zu entwickeln und ihren individuellen Schreibstil zu entdecken.
+In dieser Unterrichtseinheit geht es darum, kreativ mit der deutschen Sprache umzugehen. Die Lernenden werden angeleitet, eigene Geschichten zu entwickeln, ihre Schreibfertigkeiten zu verbessern und den Ausdruck ihrer Gedanken zu fördern. Ziel ist es, ihre Fantasie anzuregen und ein Bewusstsein für den Aufbau und die Struktur von Texten zu schaffen. Gleichzeitig sollen die Schüler lernen, konstruktives Feedback zu geben und zu empfangen.
 
 ## Auftrag
-Die Schüler sollen eine kurze Geschichte zu einem vorgegebenen Thema verfassen. Dabei sollen sie verschiedene Elemente des kreativen Schreibens verwenden, wie zum Beispiel Dialoge, Beschreibungen und Figurenentwicklung. Zusätzlich müssen sie ihre Geschichten in einer kleinen Gruppe vorstellen und Feedback von ihren Mitschülern einholen.
-```
+Die Lernenden sollen eine kurze Geschichte verfassen, die folgende Elemente enthält:
+- Ein einprägsames Hauptcharakter
+- Einen Konflikt, der gelöst werden muss
+- Ein unerwartetes Ende
+
+Zusätzlich müssen sie mindestens zwei Peer-Feedback-Sitzungen durchführen, in denen sie ihren Mitschülern Rückmeldungen zu deren Geschichten geben. Am Ende der Einheit präsentieren die Schüler ihre Geschichten in kleinen Gruppen und diskutieren die verschiedenen Erzähltechniken, die verwendet wurden.

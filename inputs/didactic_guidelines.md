@@ -1,7 +1,7 @@
 ```json
 {
-  "title": "Einführung in die Grundlagen der Programmierung",
-  "goal": "Die Schüler sollen die grundlegenden Konzepte der Programmierung verstehen und kleine Programme erstellen können.",
-  "topic": "Programmierung für Anfänger"
+  "Titel": "Einführung in die Grundlagen der geometrischen Formen",
+  "Ziel": "Die Schüler sollen die verschiedenen geometrischen Formen erkennen und ihre Eigenschaften beschreiben können.",
+  "Thema": "Geometrie: Formen und ihre Eigenschaften"
 }
 ```
