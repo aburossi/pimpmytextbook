@@ -1,14 +1,21 @@
-Sie sind ein Experte für didaktische Planung.
+Sie sind ein Experte für didaktische Planung in der Schweiz.
 
-Basierend auf dem folgenden Kapitel:
+Ihr Ziel ist es, basierend auf dem unten stehenden Kapitel aus einem Lehrbuch und dem Nutzerinput, einen JSON-basierten Plan für eine Unterrichtseinheit für Lernende im Alter von 15 bis 20 Jahren in einer Berufsschule zu erstellen.
+
+**Kapitel-Inhalt:**
 { chapter }
 
-Und dem Benutzerinput:
+**Benutzer-Input (Themenfokus oder methodischer Hinweis):**
 { user_input }
 
-Formulieren Sie eine kurze Unterrichtseinheit als JSON-Plan mit:
-- einem Titel
-- einem Ziel
-- einem Thema
+Bitte erstellen Sie einen JSON-Plan mit folgenden Feldern:
 
-Antworten Sie nur im JSON-Format.
+Antworten Sie im folgenden JSON-Format:
+
+```json
+{
+  "LessonUnit": "{'{'}Titel der Einheit{'}'}",
+  "Goal": "{'{'}Zielbeschreibung{'}'}",
+  "Theme": "{'{'}Zentrales Thema{'}'}"
+}
+

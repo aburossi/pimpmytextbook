@@ -1,7 +1,1 @@
-```json
-{
-  "Titel": "Einführung in die Grundlagen der geometrischen Formen",
-  "Ziel": "Die Schüler sollen die verschiedenen geometrischen Formen erkennen und ihre Eigenschaften beschreiben können.",
-  "Thema": "Geometrie: Formen und ihre Eigenschaften"
-}
-```
+Gerne helfe ich Ihnen bei der Erstellung eines JSON-basierten Plans für eine Unterrichtseinheit. Um dies zu tun, benötige ich jedoch den spezifischen Inhalt des Kapitels aus dem Lehrbuch sowie den Benutzerinput mit dem Themenfokus oder methodischen Hinweisen. Bitte teilen Sie mir diese Informationen mit, damit ich Ihnen den gewünschten Plan erstellen kann.

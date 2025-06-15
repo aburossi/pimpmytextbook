@@ -1,5 +1,13 @@
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from langchain.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+load_dotenv()
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
 
 def generate_guidelines(inputs):
     with open("prompts/didactic_guidelines.txt") as f:
@@ -37,3 +45,5 @@ if __name__ == "__main__":
 
     result = generate_guidelines(combined_inputs)
     print("\n[DEBUG] Final Result:\n", result[:1000])
+    print("[DEBUG] Loaded chapter content preview:", chapter[:500])
+    print("[DEBUG] Loaded user_input preview:", user_input[:500])
