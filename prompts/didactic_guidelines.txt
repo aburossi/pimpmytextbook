@@ -17,57 +17,9 @@ Benutzereingabe (Input vom Lehrer oder externe Materialien):
 - Lernende sollen die Aufgaben selbstgesteuert bearbeiten können.
 
 **Anweisung:**
-Bitte liefern Sie die Antwort im folgenden JSON-Format – nur der JSON-Block:
+Sie sind ein Experte für die Gestaltung von JSON-Plänen...
 
-```json
-{
-  "LessonUnit": "Titel der Einheit",
-  "Kick-Off": {
-    "TargetGroup": "Relevanz des Themas für die Lebenswelt der Lernenden",
-    "Overview": [
-      {
-        "PageReference": "z. B. Seite 101",
-        "Summary": "Kurzzusammenfassung der Schlüsselkonzepte"
-      }
-    ],
-    "LearningGoals": [
-      "Ziel 1", "Ziel 2"
-    ]
-  },
-  "TheoreticalFundamentals": [
-    {
-      "Topic": "Begriff oder Konzept",
-      "Content": "Wichtige Inhalte dazu",
-      "LegalReferences": ["Relevante Gesetze"],
-      "Assignments": [
-        {
-          "Focus": "Fokus der Aufgabe",
-          "Goal": "Lernziel"
-        }
-      ],
-      "MindmapIntegration": {
-        "PageReference": "z. B. Seite 102",
-        "DidacticPurpose": "Warum in die Mindmap?",
-        "Nodes": [
-          {
-            "ParentNode": "Oberthema",
-            "ChildNodes": ["Unterpunkt 1", "Unterpunkt 2"],
-            "StudentGuidance": "Anleitung zur Erweiterung"
-          }
-        ]
-      }
-    }
-  ],
-  "PracticalActivities": [
-    {
-      "Title": "Aktivitätstitel",
-      "Overview": "Ziel und Relevanz",
-      "Steps": ["Schritt 1", "Schritt 2"]
-    }
-  ],
-  "ClosingRemarks": {
-    "Summary": "Was soll hängen bleiben?",
-    "KeyPassages": ["Kernbegriff 1", "Kernbegriff 2"],
-    "SpecialConsiderations": "Tipps für die Selbstlernphase"
-  }
-}
+Ihre Aufgabe ist es, eine dreiteilige Unterrichtseinheit zu erstellen...
+
+Nutzen Sie das Kapitel und den Nutzerinput, um den Plan zu erstellen.
+Antworten Sie im JSON-Format wie durch separate Anweisung beschrieben.

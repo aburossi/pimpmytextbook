@@ -13,49 +13,47 @@ os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 
 def generate_guidelines(inputs):
+    # Prepare parser for schema validation
+    parser = PydanticOutputParser(pydantic_object=LessonPlan)
+
+    # Load template text
     with open("prompts/didactic_guidelines.txt", encoding="utf-8") as f:
         system_template = f.read()
 
     print("[DEBUG] Template preview:", system_template[:300])
     print("[DEBUG] Inputs received:", inputs.keys())
 
+    # Include parser format instructions
+    format_instructions = parser.get_format_instructions()
+
+    # Use format_instructions in human message
     system_prompt = SystemMessagePromptTemplate.from_template(system_template)
     human_prompt = HumanMessagePromptTemplate.from_template(
-        "Kapitel:\n{chapter}\n\nNutzerinput:\n{user_input}"
+        "Kapitel:\n{chapter}\n\nNutzerinput:\n{user_input}\n\n{format_instructions}"
     )
 
     prompt = ChatPromptTemplate.from_messages([system_prompt, human_prompt])
-    messages = prompt.format_messages(**inputs)
+    messages = prompt.format_messages(
+        chapter=inputs["chapter"],
+        user_input=inputs["user_input"],
+        format_instructions=format_instructions
+    )
 
-    model = ChatOpenAI(model_name="gpt-4o-mini")
+    # Model
+    model = ChatOpenAI(model_name="gpt-4o-mini", temperature=0.2, max_tokens=13000)
 
     result = model.invoke(messages)
-    with open("outputs/guidelines_output.md", "w", encoding="utf-8") as f:
-        f.write(result.content)
 
-    return result.content
+    # Parse into validated schema object
+    lesson_plan = parser.parse(result.content)
 
-    with open("prompts/didactic_guidelines.txt") as f:
-        template = f.read()
+    # Save raw JSON (pretty-printed)
+    import json
+    with open("outputs/guidelines_output.json", "w", encoding="utf-8") as f:
+        json.dump(lesson_plan.dict(by_alias=True), f, ensure_ascii=False, indent=2)
 
-    print("[DEBUG] Template keys required:", template[:300])
-    print("[DEBUG] Inputs received:", inputs.keys())
+    return json.dumps(lesson_plan.dict(by_alias=True), ensure_ascii=False, indent=2)
 
-    prompt = PromptTemplate.from_template(template)
-    model = ChatOpenAI(model_name="gpt-4o-mini")
-
-    try:
-        formatted_prompt = prompt.format(**inputs)
-    except KeyError as e:
-        raise ValueError(f"Missing key for template: {e}")
-
-    with open("outputs/debug_prompt_guidelines.txt", "w") as f:
-        f.write(formatted_prompt)
-
-    result = model.invoke(formatted_prompt)
-    with open("outputs/guidelines_output.md", "w") as f:
-        f.write(result.content)
-    return result.content
 
 if __name__ == "__main__":
     from utils.file_loader import load_textbook, load_user_content
