@@ -1,1 +1,1 @@
-Es scheint, dass in Ihrer Anfrage die spezifischen Inhalte des Kapitels und der Benutzerinput nicht angegeben sind. Bitte geben Sie mir die Informationen zu dem Kapitel und das gewünschte Thema oder methodische Hinweise, damit ich einen JSON-basierten Plan erstellen kann.
+Um Ihnen bei der didaktischen Planung zu helfen, benötige ich den speziellen Inhalt des Kapitels und den Nutzerinput. Bitte geben Sie mir diese Informationen, damit ich den JSON-basierten Plan erstellen kann.
