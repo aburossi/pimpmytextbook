@@ -1,12 +1,22 @@
-# Unterrichtseinheit: Kreatives Schreiben im Deutschunterricht
+# Unterrichtseinheit: Strafrecht und Jugendstrafrecht
 
 ## Worum es geht
-In dieser Unterrichtseinheit geht es darum, kreativ mit der deutschen Sprache umzugehen. Die Lernenden werden angeleitet, eigene Geschichten zu entwickeln, ihre Schreibfertigkeiten zu verbessern und den Ausdruck ihrer Gedanken zu fördern. Ziel ist es, ihre Fantasie anzuregen und ein Bewusstsein für den Aufbau und die Struktur von Texten zu schaffen. Gleichzeitig sollen die Schüler lernen, konstruktives Feedback zu geben und zu empfangen.
+In dieser Unterrichtseinheit beschäftigen sich die Lernenden zwischen 15 und 20 Jahren mit den Grundsätzen des Strafrechts und des Jugendstrafrechts. Die Diskussion über die Notwendigkeit von Strafen im Jugendstrafrecht und die aktuellen Herausforderungen, angesichts der Zunahme von Straftaten unter Jugendlichen, stehen im Mittelpunkt. Dabei werden grundlegende Prinzipien des Strafrechts sowie spezifische Aspekte des Jugendstrafrechts erläutert, um die Unterschiede und die Bedeutung von Strafen in der Resozialisierung zu erkennen.
 
 ## Auftrag
-Die Lernenden sollen eine kurze Geschichte verfassen, die folgende Elemente enthält:
-- Ein einprägsames Hauptcharakter
-- Einen Konflikt, der gelöst werden muss
-- Ein unerwartetes Ende
+1. **Einführung in die Grundsätze des Strafrechts**:
+   - Diskutieren Sie die grundlegenden Prinzipien des Strafrechts und deren Bedeutung.
+   - Erstellen Sie eine Mindmap zu diesen Grundsätzen basierend auf den Erläuterungen in der Unterrichtseinheit.
 
-Zusätzlich müssen sie mindestens zwei Peer-Feedback-Sitzungen durchführen, in denen sie ihren Mitschülern Rückmeldungen zu deren Geschichten geben. Am Ende der Einheit präsentieren die Schüler ihre Geschichten in kleinen Gruppen und diskutieren die verschiedenen Erzähltechniken, die verwendet wurden.
+2. **Analysethema: Jugendstrafrecht**:
+   - Analysieren Sie die Strafen im Jugendstrafrecht und diskutieren Sie deren Auswirkungen.
+   - Erstellen Sie eine Mindmap zu den Strafen im Jugendstrafrecht und vergleichen Sie die verschiedenen Strafen für Jugendliche unter und über 15 Jahren.
+
+3. **Praktische Aktivität: Rollenspiel**:
+   - Nehmen Sie an einem Rollenspiel teil, in dem Sie die Rollen von verschiedenen Stakeholdern (Richter, Anwalt, Jugendlicher) einnehmen. Diskutieren Sie die Notwendigkeit von härteren Strafen.
+
+4. **Zukunftsszenario**:
+   - Entwickeln Sie ein Szenario, wie sich das Jugendstrafrecht in den nächsten 10 Jahren entwickeln könnte, unter Berücksichtigung der aktuellen Trends in der Jugendkriminalität. Diese Szenarien werden in Gruppen präsentiert und über die möglichen gesellschaftlichen Auswirkungen diskutiert.
+
+5. **Abschlussdiskussion**:
+   - Fassen Sie die wichtigsten Punkte über die Grundsätze des Strafrechts und die Notwendigkeit von Strafen im Jugendstrafrecht zusammen. Diskutieren Sie die emotionalen und sozialen Aspekte, die bei der Jugendkriminalität eine Rolle spielen.
