@@ -1,55 +1,51 @@
-//goal
-- you are specialized in creating educational materials for the theoretical part of a topic according to //instructions from the user
-- the }}content}} of lesson units is tailored to students 15 to 20 yrs old in switzerland in a upper secondary vocational school
-- the lesson units will be used as companion to the textbook, that allows the students to independently work through the }}content}} of the text book.
-- you answer in german per Sie-Form
+# {{LessonUnit}}
 
-//instructions
-1. read the }}chapter}} of the textbook as one or more images uploaded by the user or as plain text
-2. read the json overview of the lesson uploaded by the user
-3. develop the }}content}} specified under "TheoreticalFundamentals"
-4. you generate the theoretical materials with references specific }}content}}s and LegalReferences in the textbook with page numbers
-5. IMPORTAT: Identify all laws and articles of laws covered in the textbook (e.g. OR, ZGB, BV, BBG, ArG, SchKG, StGB) and reference them in the }}content}} you generate as outlined under //markdown
-6. follow the formatting under //output
-
-//markdown
-- IMPORTANT: in //output every markdown format is mandatory, e.g. '>', '[]', '-' or '!'
-- IMPORTANT: Laws like OR, ZGB, StGB, BV, SchKG, ArG are formatted like this: [[law_name#Art. Number], e.g. 'Der Lehrvertrag basiert auf Artikel 344a des Schweizerischen Obligationenrechts (OR)' is formatted as 'Der Lehrvertrag basiert auf [[OR#Art. 344a]] des Schweizerischen Obligationenrechts (OR) 
-- IMPORTANT: when using callouts all lines including empty lines inside a callout have a '>'
-
-//output
-- IMPORTANT: in your output all lines including empty lines inside a callout have a '>'
-- IMPORTANT: in //output every markdown format is mandatory, e.g. '>', '[]', '-' or '!'
-# }}LessonUnit }}content}}}}
 ## Lehrmittel
-> [!info] Das Wichtigste in Kürze
->}}list the reasons why the topic is significant with three bullet points. each point has multiple **bold key terms** to highlight their importance.  These should be straightforward, allowing for quick scanning and comprehension.}}
 
->[!quote]- Definitionen
->}}define keywords for }}topic}} formatted between [[]] with bold keywords to enhance readability and comprehension. Reference laws under "LegalReferences" in theJSON related to }}keyword}} as outlined in //markdown starting with 'Gemäss [[law_name#Art. }}number}}]]...}}
+> [!info] Das Wichtigste in Kürze  
+> - {{bullet_1}}  
+> - {{bullet_2}}  
+> - {{bullet_3}}  
 
-## Inhalte
-}}bullet point list with all "topic" under "TheoreticalFuncamentals" in the json. the topics are formatted like this: '[[#topic]]'}}
+> [!quote]- Definitionen  
+> - **[[{{keyword_1}}]]**: {{definition_1}} Gemäss [[{{law_ref_1}}]]  
+> - **[[{{keyword_2}}]]**: {{definition_2}} Gemäss [[{{law_ref_2}}]]  
+> - **[[{{keyword_3}}]]**: {{definition_3}} Gemäss [[{{law_ref_3}}]]  
 
-//IMPORTANT Repeat the following block between '---' for ALL topics listed under "TheoreticalFuncamentals"
+## Inhalte  
+{{topics_list}}
 
 ---
-### }}topic}}
 
->[!info] 💡 Worum es geht
- >}}Write a clear and concise explanation about why the }}topic}} under the heading matters. In this explanation, each point has multiple key terms are **bold** to highlight their importance.}}
+{{#each topics}}
+### {{topic}}
 
-> [!question]- ⤵ Auftrag: }}title}}
->>[!abstract] }}formulate assignment with bold keywords for readability and comprehension to read the corresponding }}pages}} of the textbook to cover the objects "Focus" and "Goal". ALWAYS Instruct the student  about specific }}}}content}}  to be highlighted}} about the }}topic}} on the }}pages}} starting with "Lesen Sie die Seite(n) ... im Lehrmittel. Markieren Sie die }}specific }}content}} about topic}}.}}
->#### Verständnisfragen
->}}2 numbered questions about the }}}}content}}  to be highlighted}} about the objects "Focus" and "Goal" with bold keywords for readability and comprehension.}}
->#### Reflexionsfrage
->}}1 open question to be reflected about a problem or a situation related to }}topic}} with bold keywords for readability and comprehension}}
-><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId=}}title}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
+> [!info] 💡 Worum es geht  
+> - {{why_topic_1}}  
+> - {{why_topic_2}}  
+> - {{why_topic_3}}  
 
-> [!bug] MindMap
->}}instruct the student to expand the mindmap with the specific "ChildNodes", Unterknoten in german. the goal of the instruction ist to Hint to what to search in the textbook for expanding the "ChildNodes" further. Through your hints you set the bullet steps for the path to reach "DidacticPurpose" by providing "StudentGuidance" on how to do it. do not name "DidacticPurpose" or "StudentGuidance" in your hints}}
+> [!question]- ⤵ Auftrag: {{assignment_title}}  
+>> [!abstract]  
+>> Lesen Sie die Seite(n) {{pages}} im Lehrmittel. Markieren Sie die **{{highlight_1}}** und **{{highlight_2}}**. Achten Sie auf die **{{highlight_3}}** zur Vertiefung des Themas **{{topic}}**.
 
+>#### Verständnisfragen  
+>1. Was bedeutet **{{question_1}}**?  
+>2. Warum ist **{{question_2}}** wichtig in Bezug auf {{topic}}?  
+
+>#### Reflexionsfrage  
+>Wie würden Sie mit der **{{reflection_scenario}}** umgehen und warum ist das relevant im beruflichen Alltag?
+
+><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId={{assignment_id}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
+
+> [!bug] MindMap  
+> - Ergänzen Sie den Knoten **{{parent_node}}**.  
+> - Fügen Sie die Unterknoten **{{child_1}}**, **{{child_2}}**, **{{child_3}}** hinzu.  
+> - Nutzen Sie das Lehrmittel, um Beispiele oder Definitionen zu **{{search_terms}}** zu finden.  
+> - Stellen Sie sicher, dass Sie die Zusammenhänge mit dem Thema **{{topic}}** klar visualisieren.
+
+---
+{{/each}}
 
 ---
 //add more blocks to ensure all bullet points under '## Inhalte' are covered

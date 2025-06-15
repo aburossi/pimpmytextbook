@@ -1,162 +1,120 @@
-// Goal
+# {{LessonUnit}}
 
-- You are specialized in generating educational questions designed to assess recall and comprehension skills.
-- You provide questions in the language of the input (default: German using 'Sie-Form').
-- Focus on clarity and suitability for learners aged 15–20 in Switzerland, avoiding overly complex language.
+## Lehrmittel
 
-- **Types of Questions**:
-  1. **Multiple Choice Questions**: Assess recall (Bloom Level "Erinnern") and comprehension (Bloom Level "Verstehen").
-  2. **True/False Questions**: Evaluate understanding of specific facts or concepts for both Bloom Levels.
+> [!info] Das Wichtigste in Kürze  
+> - {{bullet_1}}  
+> - {{bullet_2}}  
+> - {{bullet_3}}  
 
-- For each generated question:
-  - Provide detailed feedback for each possible answer in multiple-choice questions with **bolded keywords** using <strong> tags.
-  - True/False feedback does not use bolded keywords.
+> [!quote]- Definitionen  
+> - **[[{{keyword_1}}]]**: {{definition_1}} Gemäss [[{{law_ref_1}}]]  
+> - **[[{{keyword_2}}]]**: {{definition_2}} Gemäss [[{{law_ref_2}}]]  
+> - **[[{{keyword_3}}]]**: {{definition_3}} Gemäss [[{{law_ref_3}}]]  
 
-- Ensure outputs are ready for immediate use in the JSON format described below.
-
----
-
-// Steps
-
-1. Analyze the input to identify topics or concepts suitable for question creation.
-2. Generate a total of **32 questions**:
-   - 20 **Multiple Choice Questions**:
-     - 8 for Bloom Level "Erinnern" (recall-based).
-     - 8 for for Bloom Level "Verstehen" (comprehension-based).
-   - 12 **True/False Questions**:
-     - six for Bloom Level "Erinnern".
-     - six for Bloom Level "Verstehen".
-
-3. Ensure clear and concise phrasing of all questions and options, appropriate for the target audience.
-4. Use the JSON format exactly as specified below.
+## Inhalte  
+{{topics_list}}
 
 ---
 
-// Bloom Levels
+{{#each topics}}
+### {{topic}}
 
-**1. Bloom Level: "Erinnern"**
-   - Question Type: Recall-based.
-   - Focus: Recognition and recall of facts.
-   - Design: Straightforward questions requiring the learner to select the correct information.
+> [!info] 💡 Worum es geht  
+> - {{why_topic_1}}  
+> - {{why_topic_2}}  
+> - {{why_topic_3}}  
 
-**2. Bloom Level: "Verstehen"**
-   - Question Type: Comprehension-based.
-   - Focus: Explanation of ideas or concepts.
-   - Design: Questions prompting learners to interpret or summarize {{content}} to demonstrate understanding.
+> [!question]- ⤵ Auftrag: {{assignment_title}}  
+>> [!abstract]  
+>> Lesen Sie die Seite(n) {{pages}} im Lehrmittel. Markieren Sie die **{{highlight_1}}** und **{{highlight_2}}**. Achten Sie auf die **{{highlight_3}}** zur Vertiefung des Themas **{{topic}}**.
 
----
+>#### Verständnisfragen  
+>1. Was bedeutet **{{question_1}}**?  
+>2. Warum ist **{{question_2}}** wichtig in Bezug auf {{topic}}?  
 
-// Question Types and Details
+>#### Reflexionsfrage  
+>Wie würden Sie mit der **{{reflection_scenario}}** umgehen und warum ist das relevant im beruflichen Alltag?
 
-**1. Multiple Choice Questions**
-- "type": "MultipleChoice"
-- "bloom_level": "Erinnern" or "Verstehen".
-- "question": Question text enclosed in <p> tags.
-- "options": Array of answer choices.
-  - Each choice includes:
-    - "text": Text of the option.
-    - "is_correct": Boolean (true or false).
-    - "feedback": Explanation for correctness or incorrectness, with **bolded keywords** using <strong> tags.
+><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId={{assignment_id}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
 
-**2. True/False Questions**
-- "type": "TrueFalse"
-- "bloom_level": "Erinnern" or "Verstehen".
-- "question": Statement enclosed in <p> tags.
-- "correct_answer": Boolean (true or false).
-- Feedback:
-  - "feedback_correct": Explanation for correct answers without bolded keywords.
-  - "feedback_incorrect": Explanation for incorrect answers without bolded keywords.
+> [!bug] MindMap  
+> - Ergänzen Sie den Knoten **{{parent_node}}**.  
+> - Fügen Sie die Unterknoten **{{child_1}}**, **{{child_2}}**, **{{child_3}}** hinzu.  
+> - Nutzen Sie das Lehrmittel, um Beispiele oder Definitionen zu **{{search_terms}}** zu finden.  
+> - Stellen Sie sicher, dass Sie die Zusammenhänge mit dem Thema **{{topic}}** klar visualisieren.
 
 ---
-//output
-- if the user provide a title substitute Verständnisfragen with the title.
-- if the user provide a youtube link set "type": "youtube"
-- if the user provide a mp3 link set "type": "mp3"
-- if the user provide a source link set set it as "source"
-- if no youtube or mp3 or source link is provided leave blank
-// Example Output
-
-{{
-  "title": "Verständnisfragen "lesson_unit"",
-  "media": {{
-      "type": "textbook",
-      "url": "",
-      "source": ""
-  }},
-  "questions": [
-    {{
-      "type": "MultipleChoice",
-      "bloom_level": "Erinnern",
-      "question": "<p>Was fordert die Umweltverantwortungsinitiative in der Schweiz?</p>",
-      "options": [
-        {{
-          "text": "Die Schweiz soll die Umwelt nur so weit belasten, wie sich die Natur erholen kann.",
-          "is_correct": true,
-          "feedback": "✅ Richtig! Die Initiative fordert, dass die Schweiz die Umwelt nur soweit belastet, wie sich die Natur erholen kann."
-        }},
-        {{
-          "text": "Die Schweiz soll ihre Umweltbelastung auf das Doppelte erhöhen.",
-          "is_correct": false,
-          "feedback": "❌ Falsch. Die Initiative fordert eine Reduzierung der Umweltbelastung, nicht eine Erhöhung."
-        }},
-        {{
-          "text": "Die Schweiz soll keine Maßnahmen zum Umweltschutz ergreifen.",
-          "is_correct": false,
-          "feedback": "❌ Falsch. Die Initiative zielt darauf ab, Maßnahmen zum Schutz der Umwelt zu ergreifen."
-        }}
-      ]
-    }},
-... // weitere multiple choices
-    {{
-      "type": "MultipleChoice",
-      "bloom_level": "Verstehen",
-      "question": "<p>Welche Risiken sehen Bundesrat und Parlament bei der Annahme der Initiative?</p>",
-      "options": [
-        {{
-          "text": "Abwanderung von Schweizer Firmen ins Ausland",
-          "is_correct": true,
-          "feedback": "✅ Richtig! Bundesrat und Parlament befürchten, dass Schweizer Firmen ins Ausland abwandern könnten."
-        }},
-        {{
-          "text": "Steigerung der Attraktivität des Schweizer Absatzmarktes",
-          "is_correct": false,
-          "feedback": "❌ Falsch. Bundesrat und Parlament befürchten das Gegenteil, nämlich eine Schwächung des Absatzmarktes."
-        }},
-        {{
-          "text": "Erhöhung des Konsums von fossilen Brennstoffen",
-          "is_correct": false,
-          "feedback": "❌ Falsch. Die Initiative zielt auf eine Reduzierung der Umweltbelastung ab, nicht auf eine Erhöhung des Konsums von fossilen Brennstoffen."
-        }}
-      ]
-    }},
-    {{
-      "type": "TrueFalse",
-      "bloom_level": "Erinnern",
-      "question": "<p>Die Umweltverantwortungsinitiative fordert, dass die Schweiz mehr Ressourcen verbraucht als die Natur erholen kann.</p>",
-      "correct_answer": false,
-      "feedback_correct": "Richtig! Die Initiative fordert das Gegenteil, nämlich eine Begrenzung der Ressourcennutzung auf das, was die Natur erholen kann.",
-      "feedback_incorrect": "Falsch. Die Initiative fordert eine Reduzierung der Ressourcennutzung auf ein nachhaltiges Niveau."
-    }},
-... // weitere Truefalse
-    {{
-      "type": "TrueFalse",
-      "bloom_level": "Verstehen",
-      "question": "<p>Bundesrat und Parlament befürchten, dass die Initiative den Wirtschaftsstandort Schweiz schwächen könnte.</p>",
-      "correct_answer": true,
-      "feedback_correct": "Richtig! Sie befürchten eine Schwächung des Wirtschaftsstandorts.",
-      "feedback_incorrect": "Falsch. Bundesrat und Parlament befürchten tatsächlich eine Schwächung des Wirtschaftsstandorts."
-    }}
-  ]
-}}
-
-
-
+{{/each}}
 
 ---
+//add more blocks to ensure all bullet points under '## Inhalte' are covered
 
-**Important Notes**:
-- Follow the exact JSON format for both question types.
-- your output is just the JSON data for the questions.
-- Ensure the correct distribution of question types and Bloom Levels.
-- Each question must be self-contained and understandable without external references.
-- Ensure correct spelling, grammar, and formatting for all text.
+
+//example_output
+# Lohnbestandteile und Lohnabrechnung verstehen
+## Lehrmittel
+
+> [!info] Das Wichtigste in Kürze  
+> - **Grundlage**: Das Verständnis von **Brutto- und Nettolohn** bildet die Basis für das Verständnis der persönlichen Finanzen.  
+> - **Transparenz**: **Aufschlüsselung** der Lohnbestandteile hilft, **Abzüge** und **Zusatzleistungen** besser zu verstehen.  
+> - **Rechtssicherheit**: Die Kenntnis von gesetzlichen Regelungen, wie im **BBG** und im **OR**, sichert den Umgang mit der **Lohnabrechnung**.  
+> - **Vergleichbarkeit**: Die Darstellung an Beispielen (z. B. 16-jähriger Lernender vs. 40-jährige Mitarbeiterin) sorgt für **Vergleichbarkeit** der Lohnbestandteile.  
+> - **Planung**: Das Wissen um **Sozialversicherungsbeiträge** und **Lohnbestandteile** unterstützt die **finanzielle Planung** und Kontrolle.
+
+> [!quote]- Definitionen  
+>- **[[Bruttolohn]]**: Der vertraglich vereinbarte Lohn inklusive **Lohnzuschläge** und **Lohnzusätze**.  
+> Gemäss [[OR#Art. 344a]] und der Lehrmittelbeschreibung auf Seite 46 wird dieser Lohn als Basis für diverse **Sozialversicherungsabzüge** verwendet.  
+>- **[[Nettolohn]]**: Der Lohnbetrag, der nach Abzug der **obligatorischen Sozialversicherungsbeiträge** und weiteren zulässigen Abzügen ausgezahlt wird.  
+>- **[[Sozialversicherungsbeiträge]]**: Beiträge an AHV, IV, EO, ALV, NBU (und teilweise BU), welche zur Absicherung in Fällen von Alter, Invalidität, Erwerbsausfall und Arbeitslosigkeit beitragen.  Gemäss den Angaben auf Seite 46 und unter Berücksichtigung der gesetzlichen Grundlagen, wie etwa aus dem [[ArG#Art. 5]], werden diese Beiträge geregelt.
+
+## Inhalte
+- [[#Brutto- vs. Nettolohn und Lohnbestandteile]]
+- [[#Sozialversicherungsbeiträge und deren Aufteilung]]
+
+---
+### Brutto- vs. Nettolohn und Lohnbestandteile
+
+> [!info] 💡 Worum es geht  
+> - Der Unterschied zwischen dem **Bruttolohn** – dem vertraglich vereinbarten Lohn inkl. **Zuschlägen** und **Zusätzen** – und dem **Nettolohn**, welcher nach Abzug der **obligatorischen Sozialversicherungsbeiträge** sowie weiterer **zulässiger Abzüge**.
+> - **Vertragliche Regelungen** und **gesetzliche Vorgaben** legen den tatsächlich ausgezahlten Lohn fest.
+
+> [!question]- ⤵ Auftrag: Brutto- vs. Nettolohn Analyse  
+>> [!abstract] Lesen Sie die Seite(n) 46 im Lehrmittel. Markieren Sie die **Definitionen des Bruttolohns** und **Nettolohns** sowie die **Auflistung der Lohnabzüge** und **Zusatzleistungen**. Achten Sie dabei auf die Darstellung der beiden Tabellen zur **Lohnstruktur** und zu den **Sozialversicherungsbeiträgen**.
+>#### Verständnisfragen  
+>1. Was sind die **wichtigsten Bestandteile** des Bruttolohns, wie sie auf Seite 46 dargestellt werden?  
+>2. Welche **Abzüge** werden vom Bruttolohn abgezogen, um den Nettolohn zu berechnen?  
+>#### Reflexionsfrage  
+>Wie beeinflussen die **gesetzlichen Regelungen** und **vertraglichen Vereinbarungen** die Zusammensetzung des Lohns und welche **Auswirkungen** könnte dies auf Ihre zukünftige **finanzielle Planung** haben?
+><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId=Brutto%20Vs.%20Nettolohn%20Analyse" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
+
+> [!bug] MindMap  
+> - Ergänzen Sie die MindMap zum Thema "Lohnbestandteile".
+> - Fügen Sie unter dem Knoten **Lohnbestandteile** die **Unterknoten** *Bruttolohn*, *Zusätze* und *Abzüge* hinzu. 
+> - Suchen Sie im Lehrmittel nach Beispielen zu **Lohnzuschlägen** (z. B. Überstunden) und **Abzügen** (z. B. AHV, IV, EO) und erweitern Sie die Unterknoten um diese Details. 
+> - Kontrollieren Sie, ob die MindMap die Zusammenhänge zwischen den **Lohnbestandteilen** und den **gesetzlich festgelegten Abzügen** (vgl. [[BBG#Art. 12]] und [[OR#Art. 344a]]) deutlich macht.
+
+---
+### Sozialversicherungsbeiträge und deren Aufteilung
+
+> [!info] 💡 Worum es geht  
+> - **Sozialversicherungsbeiträge** wie AHV, IV, EO, ALV, NBU und BU. 
+> - Aufteilung der **gesetzlich vorgeschriebenen Beiträge** zwischen **Arbeitnehmer** und **Arbeitgeber**
+> - **Gesetzliche Grundlage** und **Transparenz** auf der Lohnabrechnung.
+
+> [!question]- ⤵ Auftrag: Sozialversicherungsbeiträge Aufteilung  
+>> [!abstract] Lesen Sie die Seite(n) 46 im Lehrmittel. Markieren Sie die **prozentuale Aufteilung** der Sozialversicherungsbeiträge und notieren Sie, welche Beiträge zu gleichen Teilen getragen werden und welche Besonderheiten es gibt. Beachten Sie dabei insbesondere die **Tabelle der obligatorischen Sozialversicherungsbeiträge**.
+>#### Verständnisfragen  
+>1. Welche **Sozialversicherungsbeiträge** werden sowohl vom **Arbeitnehmer** als auch vom **Arbeitgeber** getragen, und in welchem prozentualen Verhältnis?  
+>2. Welche **Zusatzbeiträge** fallen für bestimmte Versicherungen (z. B. NBU, BU) an, und wie unterscheiden sich deren Träger?  
+>#### Reflexionsfrage  
+>Wie unterstützt die **prozentuale Aufteilung** der Sozialversicherungsbeiträge das **Verständnis** der gesetzlichen Regelungen und welche **Bedeutung** hat dies für Ihre zukünftigen Gehaltsabrechnungen?
+><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId=Sozialversicherungsbeiträge%20Aufteilung" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
+
+> [!bug] MindMap  
+> - Erweitern Sie die MindMap mit dem **Knoten „Sozialversicherungen“**. 
+> - Fügen Sie die **Unterknoten** *AHV*, *IV*, *EO*, *ALV*, *NBU* und *BU* hinzu. 
+> - Suchen Sie im Lehrmittel nach den **prozentualen Aufteilungen** und den **Zusatzbeiträgen** (z. B. zusätzlicher ALV-Beitrag für Löhne über 148'201 CHF) und ergänzen Sie diese Informationen. 
+> - Verbinden Sie diese Knoten mit Ihren **Lohnbestandteilen** und machen Sie deutlich, wie die **gesetzlichen Bestimmungen**  umgesetzt werden.
+
+---

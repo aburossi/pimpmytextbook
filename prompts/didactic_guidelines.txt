@@ -68,65 +68,73 @@
 ---
 
 //output
-{{
-  "LessonUnit": "{{title of the lesson unit}}",
-  "Kick-Off": {{
-    "TargedGroup": "{{analysis of the relationship of the user_input with the actual or future real life of young people living in Switzerland}}",
+{
+  "LessonUnit": "{{ lesson_title }}",
+  "Kick-Off": {
+    "TargedGroup": "{{ relevance_to_youth_in_switzerland }}",
     "Overview": [
-      {{
-        "PageReference": "{{page number related to this user_input}}",
-        "Summary": "{{brief summary of the page’s key concepts}}"
-      }}
-      // Ensure this list covers all relevant user_input's topics for the lesson
+      {
+        "PageReference": "{{ page_number_1 }}",
+        "Summary": "{{ summary_of_key_concepts_1 }}"
+      },
+      {
+        "PageReference": "{{ page_number_2 }}",
+        "Summary": "{{ summary_of_key_concepts_2 }}"
+      }
+      // Add more entries as needed to cover all parts of the chapter
     ],
     "LearningGoals": [
-      "{{identified learning goals to be reached by reading the user_input}}"
+      "{{ goal_1 }}",
+      "{{ goal_2 }}",
+      "{{ goal_3 }}"
     ]
-  }},
+  },
   "TheoreticalFundamentals": [
-    {{
-      "Topic": "{{theoretical concept}}",
-      "user_input": "{{short explanation about what the student should retain about the theoretical concept}}",
+    {
+      "Topic": "{{ concept_1 }}",
+      "user_input": "{{ brief_explanation_of_concept_1 }}",
       "LegalReferences": [
-        "{{relevant laws and articles cited in {{user_input}} for the theoretical concept}}"
+        "{{ law_reference_1 }}",
+        "{{ law_reference_2 }}"
       ],
       "Assignments": [
-        {{
-          "Focus": "{{focus of the assignment}}",
-          "Goal": "{{learning goal to be achieved through the assignment}}"
-        }}
+        {
+          "Focus": "{{ focus_of_assignment_1 }}",
+          "Goal": "{{ learning_goal_assignment_1 }}"
+        }
       ],
-      "MindmapIntegration": {{
-        "PageReference": "{{page number related to this concept}}",
-        "DidacticPurpose": "{{reason for integrating this into the mindmap}}",
+      "MindmapIntegration": {
+        "PageReference": "{{ page_number_related_to_concept_1 }}",
+        "DidacticPurpose": "{{ purpose_of_mindmap_integration }}",
         "Nodes": [
-          {{
-            "ParentNode": "{{parent node title}}",
-            "ChildNodes": "{{2-3 child nodes to be added to parent node}}",
-            "StudentGuidance": "{{instructions for students on how to expand the ChildNode with user_input from the textbook}}"
-          }}
+          {
+            "ParentNode": "{{ parent_node_title }}",
+            "ChildNodes": "{{ child_node_1, child_node_2 }}",
+            "StudentGuidance": "{{ instruction_for_expanding_nodes }}"
+          }
         ]
-      }}
-    }}
-    // Ensure all theoretical topics in the lesson are covered
+      }
+    }
+    // Repeat for all additional theoretical topics
   ],
   "PracticalActivities": [
-    {{
-      "Title": "{{title of the practical activity}}",
-      "Overview": "{{description of the activity's goals and relevance}}",
+    {
+      "Title": "{{ activity_title_1 }}",
+      "Overview": "{{ description_and_relevance }}",
       "Steps": [
-        "{{step-by-step instructions}}"
+        "{{ step_1 }}",
+        "{{ step_2 }}",
+        "{{ step_3 }}"
       ]
-    }}
-    // Ensure each "Topic" under "TheoreticalFundamentals" has a PracticalActivity
+    }
+    // Repeat for each "Topic" under "TheoreticalFundamentals"
   ],
-  "ClosingRemarks": {{
-    "Summary": "{{key takeaways from the lesson unit}}",
+  "ClosingRemarks": {
+    "Summary": "{{ summary_of_lesson_unit }}",
     "KeyPassages": [
-      "{{important concepts to emphasize}}"
+      "{{ key_concept_1 }}",
+      "{{ key_concept_2 }}"
     ],
-    "SpecialConsiderations": "{{important notes for effective self-paced learning}}"
-  }}
-}}
-
-
+    "SpecialConsiderations": "{{ notes_for_self_paced_learning }}"
+  }
+}

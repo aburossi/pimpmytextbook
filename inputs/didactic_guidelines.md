@@ -1,1 +1,1 @@
-Bitte laden Sie den {user_input} in Form eines Kapitels des Lehrbuchs hoch, damit ich die Lektionseinheit für Sie gestalten kann.
+Bitte laden Sie das Kapitel Ihrer Lehrbuchinhalte hoch, damit ich die entsprechende Lehreinheit für Sie erstellen kann.
