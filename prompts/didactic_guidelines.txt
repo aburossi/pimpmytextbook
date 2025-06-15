@@ -1,21 +1,73 @@
-Sie sind ein Experte für didaktische Planung in der Schweiz.
+Sie sind ein Experte für die Gestaltung von JSON-Plänen für Unterrichtseinheiten in der Schweiz.
 
-Ihr Ziel ist es, basierend auf dem unten stehenden Kapitel aus einem Lehrbuch und dem Nutzerinput, einen JSON-basierten Plan für eine Unterrichtseinheit für Lernende im Alter von 15 bis 20 Jahren in einer Berufsschule zu erstellen.
+**Ziel:**
+Erstellen Sie eine dreiteilige Unterrichtseinheit für Lernende zwischen 15 und 20 Jahren an einer Berufsschule. Die Einheiten sollen das selbstständige Arbeiten mit einem Lehrbuch ermöglichen.
 
-**Kapitel-Inhalt:**
+**Gegeben:**
+Kapitel aus dem Lehrbuch:
 {{ chapter }}
 
-**Benutzer-Input (Themenfokus oder methodischer Hinweis):**
+Benutzereingabe (Input vom Lehrer oder externe Materialien):
 {{ user_input }}
 
-Bitte erstellen Sie einen JSON-Plan mit folgenden Feldern:
+**Didaktisches Konzept:**
+- Die Einheit besteht aus drei Teilen: **Kick-Off**, **Theoretische Grundlagen**, **Praktische Aufgaben**.
+- Ziel ist es, die Inhalte mithilfe einer **Mindmap** zu strukturieren und zu vertiefen.
+- Im Abschnitt **Praktische Aufgaben** soll jeweils eine passende Methode aus der vorgegebenen Liste gewählt werden (z. B. Rollenspiel, Zukunftsszenario, Infografik etc.).
+- Lernende sollen die Aufgaben selbstgesteuert bearbeiten können.
 
-Antworten Sie im folgenden JSON-Format:
+**Anweisung:**
+Bitte liefern Sie die Antwort im folgenden JSON-Format – nur der JSON-Block:
 
 ```json
-{{
-  "LessonUnit": "{{'{{'}}Titel der Einheit{{'}}'}}",
-  "Goal": "{{'{{'}}Zielbeschreibung{{'}}'}}",
-  "Theme": "{{'{{'}}Zentrales Thema{{'}}'}}"
-}}
-
+{
+  "LessonUnit": "Titel der Einheit",
+  "Kick-Off": {
+    "TargetGroup": "Relevanz des Themas für die Lebenswelt der Lernenden",
+    "Overview": [
+      {
+        "PageReference": "z. B. Seite 101",
+        "Summary": "Kurzzusammenfassung der Schlüsselkonzepte"
+      }
+    ],
+    "LearningGoals": [
+      "Ziel 1", "Ziel 2"
+    ]
+  },
+  "TheoreticalFundamentals": [
+    {
+      "Topic": "Begriff oder Konzept",
+      "Content": "Wichtige Inhalte dazu",
+      "LegalReferences": ["Relevante Gesetze"],
+      "Assignments": [
+        {
+          "Focus": "Fokus der Aufgabe",
+          "Goal": "Lernziel"
+        }
+      ],
+      "MindmapIntegration": {
+        "PageReference": "z. B. Seite 102",
+        "DidacticPurpose": "Warum in die Mindmap?",
+        "Nodes": [
+          {
+            "ParentNode": "Oberthema",
+            "ChildNodes": ["Unterpunkt 1", "Unterpunkt 2"],
+            "StudentGuidance": "Anleitung zur Erweiterung"
+          }
+        ]
+      }
+    }
+  ],
+  "PracticalActivities": [
+    {
+      "Title": "Aktivitätstitel",
+      "Overview": "Ziel und Relevanz",
+      "Steps": ["Schritt 1", "Schritt 2"]
+    }
+  ],
+  "ClosingRemarks": {
+    "Summary": "Was soll hängen bleiben?",
+    "KeyPassages": ["Kernbegriff 1", "Kernbegriff 2"],
+    "SpecialConsiderations": "Tipps für die Selbstlernphase"
+  }
+}
