@@ -1,120 +1,14 @@
-# {{LessonUnit}}
+Sie sind ein Experte für Unterrichtseinheiten.
 
-## Lehrmittel
+Nehmen Sie folgende Leitlinien:
+{{ guidelines }}
 
-> [!info] Das Wichtigste in Kürze  
-> - {{bullet_1}}  
-> - {{bullet_2}}  
-> - {{bullet_3}}  
+Und folgendes Nutzer-Input:
+{{ user_content }}
 
-> [!quote]- Definitionen  
-> - **[[{{keyword_1}}]]**: {{definition_1}} Gemäss [[{{law_ref_1}}]]  
-> - **[[{{keyword_2}}]]**: {{definition_2}} Gemäss [[{{law_ref_2}}]]  
-> - **[[{{keyword_3}}]]**: {{definition_3}} Gemäss [[{{law_ref_3}}]]  
+Erstellen Sie ein Markdown-Dokument mit:
+- Einem Titel
+- Einem Abschnitt "Worum es geht"
+- Einem Abschnitt "Auftrag"
 
-## Inhalte  
-{{topics_list}}
-
----
-
-{{#each topics}}
-### {{topic}}
-
-> [!info] 💡 Worum es geht  
-> - {{why_topic_1}}  
-> - {{why_topic_2}}  
-> - {{why_topic_3}}  
-
-> [!question]- ⤵ Auftrag: {{assignment_title}}  
->> [!abstract]  
->> Lesen Sie die Seite(n) {{pages}} im Lehrmittel. Markieren Sie die **{{highlight_1}}** und **{{highlight_2}}**. Achten Sie auf die **{{highlight_3}}** zur Vertiefung des Themas **{{topic}}**.
-
->#### Verständnisfragen  
->1. Was bedeutet **{{question_1}}**?  
->2. Warum ist **{{question_2}}** wichtig in Bezug auf {{topic}}?  
-
->#### Reflexionsfrage  
->Wie würden Sie mit der **{{reflection_scenario}}** umgehen und warum ist das relevant im beruflichen Alltag?
-
-><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId={{assignment_id}}" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
-
-> [!bug] MindMap  
-> - Ergänzen Sie den Knoten **{{parent_node}}**.  
-> - Fügen Sie die Unterknoten **{{child_1}}**, **{{child_2}}**, **{{child_3}}** hinzu.  
-> - Nutzen Sie das Lehrmittel, um Beispiele oder Definitionen zu **{{search_terms}}** zu finden.  
-> - Stellen Sie sicher, dass Sie die Zusammenhänge mit dem Thema **{{topic}}** klar visualisieren.
-
----
-{{/each}}
-
----
-//add more blocks to ensure all bullet points under '## Inhalte' are covered
-
-
-//example_output
-# Lohnbestandteile und Lohnabrechnung verstehen
-## Lehrmittel
-
-> [!info] Das Wichtigste in Kürze  
-> - **Grundlage**: Das Verständnis von **Brutto- und Nettolohn** bildet die Basis für das Verständnis der persönlichen Finanzen.  
-> - **Transparenz**: **Aufschlüsselung** der Lohnbestandteile hilft, **Abzüge** und **Zusatzleistungen** besser zu verstehen.  
-> - **Rechtssicherheit**: Die Kenntnis von gesetzlichen Regelungen, wie im **BBG** und im **OR**, sichert den Umgang mit der **Lohnabrechnung**.  
-> - **Vergleichbarkeit**: Die Darstellung an Beispielen (z. B. 16-jähriger Lernender vs. 40-jährige Mitarbeiterin) sorgt für **Vergleichbarkeit** der Lohnbestandteile.  
-> - **Planung**: Das Wissen um **Sozialversicherungsbeiträge** und **Lohnbestandteile** unterstützt die **finanzielle Planung** und Kontrolle.
-
-> [!quote]- Definitionen  
->- **[[Bruttolohn]]**: Der vertraglich vereinbarte Lohn inklusive **Lohnzuschläge** und **Lohnzusätze**.  
-> Gemäss [[OR#Art. 344a]] und der Lehrmittelbeschreibung auf Seite 46 wird dieser Lohn als Basis für diverse **Sozialversicherungsabzüge** verwendet.  
->- **[[Nettolohn]]**: Der Lohnbetrag, der nach Abzug der **obligatorischen Sozialversicherungsbeiträge** und weiteren zulässigen Abzügen ausgezahlt wird.  
->- **[[Sozialversicherungsbeiträge]]**: Beiträge an AHV, IV, EO, ALV, NBU (und teilweise BU), welche zur Absicherung in Fällen von Alter, Invalidität, Erwerbsausfall und Arbeitslosigkeit beitragen.  Gemäss den Angaben auf Seite 46 und unter Berücksichtigung der gesetzlichen Grundlagen, wie etwa aus dem [[ArG#Art. 5]], werden diese Beiträge geregelt.
-
-## Inhalte
-- [[#Brutto- vs. Nettolohn und Lohnbestandteile]]
-- [[#Sozialversicherungsbeiträge und deren Aufteilung]]
-
----
-### Brutto- vs. Nettolohn und Lohnbestandteile
-
-> [!info] 💡 Worum es geht  
-> - Der Unterschied zwischen dem **Bruttolohn** – dem vertraglich vereinbarten Lohn inkl. **Zuschlägen** und **Zusätzen** – und dem **Nettolohn**, welcher nach Abzug der **obligatorischen Sozialversicherungsbeiträge** sowie weiterer **zulässiger Abzüge**.
-> - **Vertragliche Regelungen** und **gesetzliche Vorgaben** legen den tatsächlich ausgezahlten Lohn fest.
-
-> [!question]- ⤵ Auftrag: Brutto- vs. Nettolohn Analyse  
->> [!abstract] Lesen Sie die Seite(n) 46 im Lehrmittel. Markieren Sie die **Definitionen des Bruttolohns** und **Nettolohns** sowie die **Auflistung der Lohnabzüge** und **Zusatzleistungen**. Achten Sie dabei auf die Darstellung der beiden Tabellen zur **Lohnstruktur** und zu den **Sozialversicherungsbeiträgen**.
->#### Verständnisfragen  
->1. Was sind die **wichtigsten Bestandteile** des Bruttolohns, wie sie auf Seite 46 dargestellt werden?  
->2. Welche **Abzüge** werden vom Bruttolohn abgezogen, um den Nettolohn zu berechnen?  
->#### Reflexionsfrage  
->Wie beeinflussen die **gesetzlichen Regelungen** und **vertraglichen Vereinbarungen** die Zusammensetzung des Lohns und welche **Auswirkungen** könnte dies auf Ihre zukünftige **finanzielle Planung** haben?
-><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId=Brutto%20Vs.%20Nettolohn%20Analyse" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
-
-> [!bug] MindMap  
-> - Ergänzen Sie die MindMap zum Thema "Lohnbestandteile".
-> - Fügen Sie unter dem Knoten **Lohnbestandteile** die **Unterknoten** *Bruttolohn*, *Zusätze* und *Abzüge* hinzu. 
-> - Suchen Sie im Lehrmittel nach Beispielen zu **Lohnzuschlägen** (z. B. Überstunden) und **Abzügen** (z. B. AHV, IV, EO) und erweitern Sie die Unterknoten um diese Details. 
-> - Kontrollieren Sie, ob die MindMap die Zusammenhänge zwischen den **Lohnbestandteilen** und den **gesetzlich festgelegten Abzügen** (vgl. [[BBG#Art. 12]] und [[OR#Art. 344a]]) deutlich macht.
-
----
-### Sozialversicherungsbeiträge und deren Aufteilung
-
-> [!info] 💡 Worum es geht  
-> - **Sozialversicherungsbeiträge** wie AHV, IV, EO, ALV, NBU und BU. 
-> - Aufteilung der **gesetzlich vorgeschriebenen Beiträge** zwischen **Arbeitnehmer** und **Arbeitgeber**
-> - **Gesetzliche Grundlage** und **Transparenz** auf der Lohnabrechnung.
-
-> [!question]- ⤵ Auftrag: Sozialversicherungsbeiträge Aufteilung  
->> [!abstract] Lesen Sie die Seite(n) 46 im Lehrmittel. Markieren Sie die **prozentuale Aufteilung** der Sozialversicherungsbeiträge und notieren Sie, welche Beiträge zu gleichen Teilen getragen werden und welche Besonderheiten es gibt. Beachten Sie dabei insbesondere die **Tabelle der obligatorischen Sozialversicherungsbeiträge**.
->#### Verständnisfragen  
->1. Welche **Sozialversicherungsbeiträge** werden sowohl vom **Arbeitnehmer** als auch vom **Arbeitgeber** getragen, und in welchem prozentualen Verhältnis?  
->2. Welche **Zusatzbeiträge** fallen für bestimmte Versicherungen (z. B. NBU, BU) an, und wie unterscheiden sich deren Träger?  
->#### Reflexionsfrage  
->Wie unterstützt die **prozentuale Aufteilung** der Sozialversicherungsbeiträge das **Verständnis** der gesetzlichen Regelungen und welche **Bedeutung** hat dies für Ihre zukünftigen Gehaltsabrechnungen?
-><iframe src="https://allgemeinbildung.github.io/abubox/answers.html?assignmentId=Sozialversicherungsbeiträge%20Aufteilung" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="100%" allowfullscreen></iframe>
-
-> [!bug] MindMap  
-> - Erweitern Sie die MindMap mit dem **Knoten „Sozialversicherungen“**. 
-> - Fügen Sie die **Unterknoten** *AHV*, *IV*, *EO*, *ALV*, *NBU* und *BU* hinzu. 
-> - Suchen Sie im Lehrmittel nach den **prozentualen Aufteilungen** und den **Zusatzbeiträgen** (z. B. zusätzlicher ALV-Beitrag für Löhne über 148'201 CHF) und ergänzen Sie diese Informationen. 
-> - Verbinden Sie diese Knoten mit Ihren **Lohnbestandteilen** und machen Sie deutlich, wie die **gesetzlichen Bestimmungen**  umgesetzt werden.
-
----
+Antwort nur als Markdown.

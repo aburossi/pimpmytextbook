@@ -1,1 +1,7 @@
-Bitte laden Sie das Kapitel Ihrer Lehrbuchinhalte hoch, damit ich die entsprechende Lehreinheit für Sie erstellen kann.
+```json
+{
+  "title": "Einführung in die Grundlagen der Programmierung",
+  "goal": "Die Schüler sollen die grundlegenden Konzepte der Programmierung verstehen und kleine Programme erstellen können.",
+  "topic": "Programmierung für Anfänger"
+}
+```
