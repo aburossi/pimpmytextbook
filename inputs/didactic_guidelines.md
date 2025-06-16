@@ -4,8 +4,8 @@
     "TargedGroup": "Lernende zwischen 15 und 20 Jahren an einer Berufsschule",
     "Overview": [
       {
-        "PageReference": "Seite 101",
-        "Summary": "Einführung in die Grundsätze des Strafrechts und Jugendstrafrechts."
+        "PageReference": "101",
+        "Summary": "Einführung in das Strafrecht und Jugendstrafrecht, Fokus auf die Bedeutung von Rechtsgütern und den Grundsätzen des Strafrechts."
       }
     ],
     "LearningGoals": [
@@ -17,7 +17,7 @@
   "TheoreticalFundamentals": [
     {
       "Topic": "Grundsätze des Strafrechts",
-      "Content": "Das Strafrecht schützt grundlegende Rechtsgüter wie Leben, Freiheit und Eigentum. Es gilt der Grundsatz 'Keine Sanktion ohne Gesetz'.",
+      "Content": "Das Strafrecht schützt wichtige Rechtsgüter wie Leib, Leben, Freiheit und Eigentum. Der Grundsatz 'Keine Sanktion ohne Gesetz' ist zentral.",
       "LegalReferences": [
         "StGB 1: Keine Sanktion ohne Gesetz",
         "StGB 12: Keine Strafe ohne Schuld",
@@ -25,12 +25,12 @@
       ],
       "Assignments": [
         {
-          "Focus": "Diskussion über die Bedeutung der Grundsätze im Strafrecht.",
-          "Goal": "Lernende sollen die Grundsätze des Strafrechts verstehen und deren Bedeutung diskutieren."
+          "Focus": "Diskussion über die Grundsätze des Strafrechts",
+          "Goal": "Verstehen, warum diese Grundsätze wichtig sind."
         }
       ],
       "MindmapIntegration": {
-        "PageReference": "Seite 101",
+        "PageReference": "101",
         "DidacticPurpose": "Strukturierung der Grundsätze des Strafrechts in einer Mindmap.",
         "Nodes": [
           {
@@ -40,35 +40,36 @@
               "Sanktionen",
               "Schuld"
             ],
-            "StudentGuidance": "Erstellen Sie eine Mindmap zu den Grundsätzen des Strafrechts."
+            "StudentGuidance": "Erstellen Sie eine Mindmap, die die Grundsätze des Strafrechts darstellt."
           }
         ]
       }
     },
     {
       "Topic": "Jugendstrafrecht",
-      "Content": "Das Jugendstrafrecht sieht mildere Strafen vor, um die Resozialisierung zu fördern. Es gibt unterschiedliche Strafen je nach Alter und Delikt.",
+      "Content": "Das Jugendstrafrecht sieht mildere Strafen vor, um Jugendlichen eine Chance zur Rehabilitation zu geben. Es gibt Diskussionen über die Notwendigkeit härterer Strafen.",
       "LegalReferences": [
-        "Jugendstrafrechtliche Bestimmungen"
+        "Jugendstrafrechtliche Bestimmungen",
+        "Schutzmassnahmen"
       ],
       "Assignments": [
         {
-          "Focus": "Analyse der Strafen im Jugendstrafrecht.",
-          "Goal": "Lernende sollen die Strafen im Jugendstrafrecht analysieren und deren Auswirkungen diskutieren."
+          "Focus": "Analyse der aktuellen Debatte über das Jugendstrafrecht",
+          "Goal": "Verstehen der Argumente für und gegen härtere Strafen."
         }
       ],
       "MindmapIntegration": {
-        "PageReference": "Seite 101",
-        "DidacticPurpose": "Visualisierung der Strafen im Jugendstrafrecht.",
+        "PageReference": "101",
+        "DidacticPurpose": "Visualisierung der Argumente im Jugendstrafrecht.",
         "Nodes": [
           {
             "ParentNode": "Jugendstrafrecht",
             "ChildNodes": [
-              "Strafen unter 15",
-              "Strafen ab 15",
-              "Schutzmassnahmen"
+              "Strafen",
+              "Schutzmassnahmen",
+              "Debatte"
             ],
-            "StudentGuidance": "Erstellen Sie eine Mindmap zu den Strafen im Jugendstrafrecht."
+            "StudentGuidance": "Erstellen Sie eine Mindmap, die die verschiedenen Aspekte des Jugendstrafrechts darstellt."
           }
         ]
       }
@@ -76,33 +77,33 @@
   ],
   "PracticalActivities": [
     {
-      "Title": "Rollenspiel zur Diskussion über Jugendstrafrecht",
-      "Overview": "Lernende schlüpfen in die Rollen von verschiedenen Stakeholdern (Richter, Anwalt, Jugendlicher) und diskutieren die Notwendigkeit von härteren Strafen.",
+      "Title": "Rollenspiel zur Debatte über Jugendstrafrecht",
+      "Overview": "Die Lernenden schlüpfen in die Rollen von Befürwortern und Gegnern einer Verschärfung des Jugendstrafrechts.",
       "Steps": [
-        "Einführung in die Rollen und das Szenario.",
-        "Vorbereitung der Argumente für jede Rolle.",
-        "Durchführung des Rollenspiels.",
-        "Reflexion über die Diskussionsergebnisse."
+        "Teilen Sie die Klasse in zwei Gruppen auf.",
+        "Jede Gruppe bereitet Argumente für ihre Position vor.",
+        "Führen Sie ein strukturiertes Rollenspiel durch, in dem die Gruppen ihre Argumente präsentieren.",
+        "Diskutieren Sie die Ergebnisse im Plenum."
       ]
     },
     {
-      "Title": "Zukunftsszenario zur Entwicklung des Jugendstrafrechts",
-      "Overview": "Lernende entwickeln ein Szenario, wie sich das Jugendstrafrecht in den nächsten 10 Jahren entwickeln könnte.",
+      "Title": "Erstellung einer Infografik",
+      "Overview": "Die Lernenden erstellen eine Infografik, die die wichtigsten Punkte des Jugendstrafrechts und die aktuellen Debatten zusammenfasst.",
       "Steps": [
-        "Brainstorming über aktuelle Trends in der Jugendkriminalität.",
-        "Entwicklung von Szenarien für die Zukunft.",
-        "Präsentation der Szenarien in Gruppen.",
-        "Diskussion über die möglichen Auswirkungen auf die Gesellschaft."
+        "Recherchieren Sie die wichtigsten Punkte des Jugendstrafrechts.",
+        "Sammeln Sie Statistiken und Fakten zur Jugendkriminalität.",
+        "Gestalten Sie eine ansprechende Infografik, die die Informationen visuell darstellt.",
+        "Präsentieren Sie die Infografik in kleinen Gruppen."
       ]
     }
   ],
   "ClosingRemarks": {
-    "Summary": "Zusammenfassung der wichtigsten Punkte über Strafrecht und Jugendstrafrecht sowie die Diskussion über die Notwendigkeit von Strafen.",
+    "Summary": "Die Unterrichtseinheit hat die Lernenden in die Grundlagen des Strafrechts und Jugendstrafrechts eingeführt und die Diskussion über die Notwendigkeit von Strafen angeregt.",
     "KeyPassages": [
       "Keine Sanktion ohne Gesetz",
       "Die Bedeutung von Schuld im Strafrecht",
-      "Die Rolle des Jugendstrafrechts in der Resozialisierung"
+      "Die Debatte über das Jugendstrafrecht"
     ],
-    "SpecialConsiderations": "Berücksichtigung der emotionalen und sozialen Aspekte der Jugendkriminalität in der Diskussion."
+    "SpecialConsiderations": "Die Lernenden sollten ermutigt werden, ihre Meinungen zu äußern und kritisch über die Themen nachzudenken."
   }
 }

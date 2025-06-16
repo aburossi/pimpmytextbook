@@ -7,6 +7,7 @@ from langchain.output_parsers import PydanticOutputParser
 from langchain_openai import ChatOpenAI
 from utils.schema import LessonPlan
 from dotenv import load_dotenv
+import json
 
 load_dotenv()
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
@@ -39,6 +40,7 @@ def generate_guidelines(inputs):
 
     # Parse output to schema
     lesson_plan = parser.parse(result.content)
-    json_string = lesson_plan.model_dump_json(indent=2, ensure_ascii=False, by_alias=True)
+    json_string = json.dumps(lesson_plan.model_dump(by_alias=True), indent=2, ensure_ascii=False)
+
 
     return json_string, lesson_plan
